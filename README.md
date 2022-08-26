@@ -10,12 +10,13 @@ All features are toggelable for a customizable experience.
 ## Upcoming features
  - points/xp change overview
  - automatic speed control (Two modes: [Speedlimit, Signals and speedlimits])
- - automatic AWS Ackknowledge
+ - automatic AWS Ackknowledge (async)
  - automatic guard bell
  - automatic doors
  - automatic termination
  - automatic stopping
  - automatic continuing route
+ - automatic horn (async)
  
 ## Keybinds
 Please note, these also contains scr keybinds. 
