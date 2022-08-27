@@ -34,10 +34,10 @@ if __name__ == '__main__':
         if config.features_enabled & 1 << 2:
             if ui['aws_status'] == 'alert':
                 keyboard.press_and_release('q')
-
-        if config.features_enabled & 1 << 6:
+        print(config.features_enabled & (1 << 6))
+        if config.features_enabled & (1 << 6):
+            print("yes")
             approach_detection(screen, ui)
-
 
         stopMilliseconds = time.time()
         frameTime = round(1000 / config.FPS)

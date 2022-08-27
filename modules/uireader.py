@@ -107,7 +107,7 @@ def ui_reader(image):
     notis_str = get_closed_notification(notis_str)
     # points
 
-    cv2.imshow("frame", notis_thresh)
+    # cv2.imshow("frame", notis_thresh)
     # cv2.moveWindow("frame", 1921, 0)
 
     return {"station_name": station_name, "distance": distance, 'throttle_percentage': throttle_percentage, 'speedlimit': int(speedlimit_sub),
