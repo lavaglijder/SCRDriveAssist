@@ -1,0 +1,27 @@
+Please proceed to your first stop.
+Please open doors to begin schedule.
+Please wait while passengers are loading...
+Press T to close doors
+Press T to buzz guard and depart
+Buzzing...
+Doors closing...
+Stop completed successfully: +N points.
+Stop completed successfully: +N points. (guard bonus)
+Arrived and unloaded at terminus: +10 points.
+Arrived and unloaded at terminus: +15 points. (guard bonus)
+Your train DOES NOT STOP here. Keep going if signal is clear.
+Please proceed to your next stop (Station Name)
+Awaiting doors dispatch...
+Awaiting door closure...
+Awaiting final dispatch...
+Awaiting guard buzzer...
+Please wait until the signal zone is cleared.
+Please wait until the signal is set to Proceed by signaller.
+Please select a schedule to begin driving
+Please continue until the train is close to the buffer to terminate.
+Please continue until the train is fully alongside the platform.
+Please stop before trying to load.
+Signal passed at danger. Emergency brake applied
+AWS alert ignored. Emergency brake applied
+You missed [Station Name]. Proceed to your next stop.
+You overshot the platform. Proceed to your next stop.
