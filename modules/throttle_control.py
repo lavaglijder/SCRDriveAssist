@@ -12,7 +12,7 @@ def update_speed(ui_data, target_speed, max_speed=100):
         target_speed = max_speed
     target = int(target_speed/max_speed*100)
     difference_throttle = target - current_throttle
-    if -1 < difference_throttle < 1:
+    if 0 < difference_throttle < 3:
         return
     elif difference_throttle > 0:
         if difference_throttle < 5:

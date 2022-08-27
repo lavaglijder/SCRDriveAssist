@@ -34,10 +34,17 @@ if __name__ == '__main__':
         if config.features_enabled & 1 << 2:
             if ui['aws_status'] == 'alert':
                 keyboard.press_and_release('q')
-        print(config.features_enabled & (1 << 6))
+
         if config.features_enabled & (1 << 6):
-            print("yes")
             approach_detection(screen, ui)
+
+        if config.features_enabled & (1 << 4) and ui['distance'] < 0.2:
+            if ui['notis_str'] == 'Press T to close doors':
+                keyboard.press_and_release('t')
+            elif ui['notis_str'] == 'Press T to open doors':
+                keyboard.press_and_release('t')
+            elif ui['notis_str'] == 'Press T to begin loading':
+                keyboard.press_and_release('t')
 
         stopMilliseconds = time.time()
         frameTime = round(1000 / config.FPS)
