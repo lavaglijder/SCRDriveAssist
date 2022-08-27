@@ -74,6 +74,9 @@ def stop_detection(image):
 
 
 def approach_detection(screen, ui_data):
+    if not ui_data['notis_str'] == '':
+        return
+
     distance = ui_data['distance']
     global close_to_station
     try:
