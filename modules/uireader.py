@@ -105,10 +105,9 @@ def ui_reader(image):
     notis_str = str(pytesseract.image_to_string(notis_thresh,
                                                  config=r'--user-words patterns/notifications.txt --oem 3 --psm 7')).replace("\n", "").strip()
     notis_str = get_closed_notification(notis_str)
-    # points
 
-    # cv2.imshow("frame", notis_thresh)
-    # cv2.moveWindow("frame", 1921, 0)
+    cv2.imshow("frame", headcode_thresh)
+    cv2.moveWindow("frame", 1921, 0)
 
     return {"station_name": station_name, "distance": distance, 'throttle_percentage': throttle_percentage, 'speedlimit': int(speedlimit_sub),
             'signal_status': signal_status, 'aws_status': aws_status, 'notis_str': notis_str}

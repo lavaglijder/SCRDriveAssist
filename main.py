@@ -4,14 +4,25 @@ import cv2
 import keyboard
 
 import config
+import routes
 import stations
+import trains
 from modules.station_automations import stop_detection, approach_detection
 from modules.uireader import ui_reader
 from screengrabber import grab_screen
 
 if __name__ == '__main__':
     print("Starting up drive assist")
-    time.sleep(1)
+
+    train = 'train_' + input("What train are you using? For example 707")
+    while not hasattr(trains, train):
+        train = input("Unknown train name please try again")
+    print(getattr(trains, train))
+
+    route = 'route_' + input("What route are you driving? For example R001")
+    while not hasattr(routes, route):
+        route = input("Unknown route, please try again")
+    print(getattr(routes, route))
 
     if config.DEBUG:
         stationFile = open("./patterns/stations.txt", "r")

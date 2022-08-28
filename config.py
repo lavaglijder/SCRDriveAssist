@@ -13,4 +13,6 @@ DEBUG = True
 # automatic continuing route (1 << 7)
 # automatic horn (async) (1 << 8)
 # automatic slowdown (speedlimit) in compatible with 1 << 9 or 1 << 1 (1 << 10)
-features_enabled = 0 + (1 << 6) + (1 << 2) + (1 << 4)
+
+features_enabled = 0
+# features_enabled = 0 + (1 << 6) + (1 << 2) + (1 << 4)
