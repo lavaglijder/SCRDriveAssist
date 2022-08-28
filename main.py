@@ -28,8 +28,14 @@ if __name__ == '__main__':
         stationFile = open("./patterns/stations.txt", "r")
         stationList = stationFile.readlines()
         for station in stationList:
-            if not hasattr(stations, station.strip().replace(" ", "_").replace("-", "_").lower()):
-                print(station.strip().replace(" ", "_").replace("-", "_").lower() + " = (0, 0, 0)")
+            station = station.strip()
+            if station.startswith("#") or station == '':
+                continue
+            if not hasattr(stations, station.replace(" ", "_").replace("-", "_").lower()):
+                print(station.replace(" ", "_").replace("-", "_").lower() + " = (0, 0, 0)")
+
+    print("Waiting 3 seconds for you to get ready")
+    time.sleep(3)
 
     while True:
         screen = grab_screen(1920, 1080)
