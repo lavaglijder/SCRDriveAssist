@@ -75,3 +75,8 @@ whitefield_lido = (0 << 0, 0, 0)
 whitney_green = (0, 0, 0)
 willowfield = (0, 0, 0)
 woodhead_lean = (0, 0, 0)
+
+# 1.10 stations
+farleigh = (0, 0, 0)
+rosedale_village = (0, 0, 0)
+esterfield = (0, 0, 0)
