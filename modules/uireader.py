@@ -60,6 +60,8 @@ def ui_reader(image):
             speedlimit_sub = 30
         elif speedlimit_str.startswith("B"):
             speedlimit_sub = 80
+        elif speedlimit_str.startswith("om"):
+            speedlimit_sub = 90
         else:
             print("Cannot find speedlimit, defaulting to 5 mph", speedlimit_str)
             speedlimit_sub = 5
