@@ -14,15 +14,15 @@ from screengrabber import grab_screen
 if __name__ == '__main__':
     print("Starting up drive assist")
 
-    train = 'train_' + input("What train are you using? For example 707")
+    train = 'train_' + input("What train are you using? For example 458_0: ")
     while not hasattr(trains, train):
         train = input("Unknown train name please try again")
-    print(getattr(trains, train))
+    train_info = getattr(trains, train)
 
-    route = 'route_' + input("What route are you driving? For example R001")
+    route = 'route_' + input("What route are you driving? For example R001: ")
     while not hasattr(routes, route):
         route = input("Unknown route, please try again")
-    print(getattr(routes, route))
+    route_info = getattr(routes, route)
 
     if config.DEBUG:
         stationFile = open("./patterns/stations.txt", "r")
