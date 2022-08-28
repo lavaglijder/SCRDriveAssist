@@ -57,6 +57,10 @@ if __name__ == '__main__':
             print("No fun info skipping")
             continue
 
+        ui['train_features'] = train_info[0]
+        ui['train_coaches'] = train_info[1]
+        ui['max_train_speed'] = train_info[2]
+
         print(ui)
         if config.features_enabled & 1 << 2:
             if ui['aws_status'] == 'alert':
