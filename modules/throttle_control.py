@@ -3,7 +3,8 @@ import time
 import keyboard
 
 
-def update_speed(ui_data, target_speed, max_speed=100):
+def update_speed(ui_data, target_speed):
+    max_speed = ui_data['max_train_speed']
     current_throttle = ui_data['throttle_percentage']
     speedlimit = ui_data['speedlimit']
     if target_speed > speedlimit:
